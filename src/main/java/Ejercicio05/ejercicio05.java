@@ -91,4 +91,5 @@ public class ejercicio05 extends JFrame {
 		
 		textArea.append(escucha + " ");
 	}
+	
 }
