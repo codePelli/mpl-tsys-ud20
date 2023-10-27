@@ -1,4 +1,4 @@
-package Ejercicios.UD20Ejercicio01;
+package Ejercicio01;
 
 import java.awt.EventQueue;
 

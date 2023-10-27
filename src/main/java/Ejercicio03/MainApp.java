@@ -1,4 +1,4 @@
-package Ejercicios.UD20Ejercicio01;
+package Ejercicio03;
 
 import java.awt.EventQueue;
 
@@ -8,7 +8,7 @@ public class MainApp {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ejercicio01 frame = new ejercicio01();
+					ejercicio03 frame = new ejercicio03();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
