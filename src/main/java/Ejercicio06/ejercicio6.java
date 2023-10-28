@@ -72,14 +72,15 @@ public class ejercicio6 extends JFrame {
 				lblImc.setText(indice);
 			}
 		});
+		
 		btnImc.setBounds(24, 120, 94, 23);
 		panel.add(btnImc);
 		
-		JLabel lblIMC = new JLabel();
-		lblIMC.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblIMC.setHorizontalAlignment(SwingConstants.CENTER);
-		lblIMC.setBounds(33, 168, 85, 23);
-		panel.add(lblIMC);
+		lblImc = new JLabel();
+		lblImc.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblImc.setHorizontalAlignment(SwingConstants.CENTER);
+		lblImc.setBounds(33, 168, 85, 23);
+		panel.add(lblImc);
 	}
 
 }
