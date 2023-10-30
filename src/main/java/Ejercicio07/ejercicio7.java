@@ -25,6 +25,7 @@ public class ejercicio7 extends JFrame {
 
 	public ejercicio7() {
 		getContentPane().setLayout(null);
+		setBounds(100,100,500,300);
 		
 		JLabel lblNewLabel = new JLabel("Cantidad a convertir");
 		lblNewLabel.setBounds(10, 11, 105, 14);
@@ -84,8 +85,5 @@ public class ejercicio7 extends JFrame {
 					
 			}
 		});
-		
-		
-		
 	}
 }
