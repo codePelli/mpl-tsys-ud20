@@ -11,6 +11,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class ejercicio8 extends JFrame {
 
@@ -18,7 +20,6 @@ public class ejercicio8 extends JFrame {
 	private JTextField tfCantidad;
 	private JTextField tfResultado;
 	private boolean conversion;
-
 
 	public ejercicio8() {
 		
@@ -44,6 +45,18 @@ public class ejercicio8 extends JFrame {
 		getContentPane().add(tfResultado);
 		
 		JButton btnConversion = new JButton("€ a ptas");
+        setFocusable(true);
+        requestFocus();
+		btnConversion.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyReleased(KeyEvent e) {
+				
+				if (e.getKeyChar() == 'e' || e.getKeyChar() == 'E') {
+					
+					btnConversion.doClick();
+				}
+			}
+		});
 		btnConversion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -74,14 +87,35 @@ public class ejercicio8 extends JFrame {
 				
 			}
 		});
+		
 		btnConversion.setBounds(125, 150, 89, 23);
 		getContentPane().add(btnConversion);
 		
 		JButton btnCambiar = new JButton("Cambiar");
+		btnCambiar.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyReleased(KeyEvent e) {
+				
+				if (e.getKeyChar() == 'c' || e.getKeyChar() == 'C') {
+					
+					btnCambiar.doClick();
+				}
+			}
+		});
 		btnCambiar.setBounds(224, 150, 89, 23);
 		getContentPane().add(btnCambiar);
 		
 		JButton btnDel = new JButton("Borrar");
+		btnDel.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyReleased(KeyEvent e) {
+				
+				if (e.getKeyChar() == 'b' || e.getKeyChar() == 'B') {
+					
+					btnDel.doClick();
+				}
+			}
+		});
 		btnDel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
